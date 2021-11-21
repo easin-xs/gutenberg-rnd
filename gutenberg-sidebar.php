@@ -15,6 +15,10 @@ function xs_enqueue_assets() {
       plugins_url( 'build/index.js', __FILE__ ),
       array( 'wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element' )
     );
+    wp_enqueue_style(
+      'xs-gutenberg-style',
+      plugins_url( 'style.css', __FILE__ )
+    );
   }
   add_action( 'enqueue_block_editor_assets', 'xs_enqueue_assets' );
 

@@ -1,0 +1,12 @@
+.xs-draggable {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background-color: red;
+    z-index: 9;
+    opacity: 0;
+    cursor: col-resize;
+}
