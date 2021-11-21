@@ -1,0 +1,8 @@
+**/prepros-6.config
+**/prepros.config
+**/.DS_Store
+**/.idea
+**/.directory
+node_modules
+package-lock.json
+none
