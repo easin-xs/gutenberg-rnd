@@ -88,7 +88,7 @@ const ToolbarComponent = () => {
   }
 
   const updateCustomField = () => {
-    wp.data.dispatch('core/editor').editPost({ meta: { _myprefix_text_metafield: 'Custom Field Updated. Awesome!' } })
+    wp.data.dispatch('core/editor').editPost({ meta: { _xs_text_metafield: 'Custom Field Updated. Awesome!' } })
   }
 
   return (
@@ -129,12 +129,12 @@ registerPlugin( 'myprefix-sidebar1', {
 const MyMenuItem = () => {
     const meta = useSelect(
         (select) =>
-          select('core/editor').getEditedPostAttribute('meta')['_myprefix_text_metafield'] // Custom meta selection
+          select('core/editor').getEditedPostAttribute('meta')['_xs_text_metafield'] // Custom meta selection
       );
       const { editPost } = useDispatch('core/editor');
 
     const handleText = (value) => {
-        editPost({ meta: { _myprefix_text_metafield: value } }) // custom meta update
+        editPost({ meta: { _xs_text_metafield: value } }) // custom meta update
     }
  
     return (
